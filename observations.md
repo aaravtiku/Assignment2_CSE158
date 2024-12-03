@@ -18,13 +18,47 @@ Average no. of reviews per brewer: 330.27522935779814
 No. of rows: 180000
 No. of cols: 13
 
-## To-do:
+6. 
+Data type information
+beer/name               object
+beer/beerId             object
+beer/brewerId            int64
+beer/ABV               float64
+beer/style              object
+review/appearance       object
+review/aroma            object
+review/palate           object
+review/taste            object
+review/overall         float64
+review/time              int64
+review/profileName      object
+review/text             object
+beer/ABV_normalized    float64
+adjusted_rating        float64
+dtype: object
 
-1. Data Types: Check the data types of each column to confirm they match expected formats
-2. Duplicate Records
-3. Scam Reviews - More than three exact matching text reviews of differnet beers
-4. Correlation between ABV and Taste, Aroma, Palate, Taste, Overall
-5. Do prolific reviewers give higher or lower average ratings compared to occasional reviewers?
-6. Any beer style correlation
-7. Word cloud
+7. No duplicate records found
+
+8. Flagged reviews: more than 3 exactly matching review texts
+Profile names with flagged reviews:
+brewersspot
+Quake1028
+DasBierChef
+drowland
+bchlala
+SuperDave
+JediMindTricks
+Brandman
+camilla
+kdheckle
+dobrisa
+iamsancho16
+
+9. Wordcloud in the .ipynb file
+
+10. Prolific reviewer defn = greater than 10 reviews. Graph included for prolific reviewer average rating vs overall
+
+11. Scatter plot included for average rating / number of reviews.
+
+12. Scatter plot -> text length vs rating
 
